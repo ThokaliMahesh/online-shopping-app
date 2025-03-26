@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cheddam randi</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: rgb(231, 233, 233);
+    }
+    h1 {
+      text-align: center;
+    }
+    .online-shopping-container {
+      max-width: 800px;
+      background-color: white;
+      margin: auto;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 4px 0 gray;
+    }
+    .product-row {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid black;
+      padding: 10px;
+      border-radius: 5px;
+      align-items: center;
+      margin: 10px 0;
+    }
+    button {
+      background-color: rgb(5, 5, 182);
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    h2 {
+      margin: 10px 0;
+    }
+    #feedback {
+      position: fixed;
+      top: 10px;
+      right: 30px;
+      background-color: white;
+      padding: 10px;
+      display: none;
+    }
+    #totalPrice {
+      text-align: right;
+    }
+  </style>
+  <body>
+    <div class="online-shopping-container">
+      <h1>Online Shopping</h1>
+      <p id="feedback"></p>
+      <h2>Available Products</h2>
+      <div id="productsContainer">
+        <!-- <div class="product-row">
+          <p>Laptop - ₹50000</p>
+          <button>Add to Cart</button>
+        </div> -->
+      </div>
+      <h2>My Cart</h2>
+      <div id="cartContainer">
+        <!-- <div class="product-row">
+          <p>Laptop - Rs. 50000</p>
+          <button>Remove</button>
+        </div> -->
+      </div>
+      <h2 id="totalPrice"></h2>
+      <!-- <button id="testing" onclick="testingDetails(100)">testing</button> -->
+      <h2>Actions</h2>
+      <button id="sortByPrice">Sort by Price</button>
+      <button id="clearCart">Clear cart</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
